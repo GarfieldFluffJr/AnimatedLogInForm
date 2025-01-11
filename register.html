@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Login Form</title>
+    <link rel="stylesheet" href="login.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="register.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <form action="">
+            <h2>Register</h2>
+            <div class="inputbox" id="new-email-container">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input
+                type="email"
+                required
+                placeholder=" "
+                onchange="newEmailFunction()"
+                id="email"
+              />
+              <label for="email">Email</label>
+            </div>
+            <div class="inputbox" id="new-password-container">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input
+                type="password"
+                required
+                placeholder=" "
+                id="new-password"
+                onchange="checkNewPassword()"
+              />
+              <label for="password">New Password</label>
+            </div>
+            <div class="inputbox" id="confirm-password-container">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input
+                type="password"
+                required
+                placeholder=" "
+                id="confirm-password"
+                onchange="checkPasswordMatch()"
+              />
+              <label for="password">Confirm Password</label>
+            </div>
+            <div class="btn-container"><button>Sign up</button></div>
+            <div class="register">
+              <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
